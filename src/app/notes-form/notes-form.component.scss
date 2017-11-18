@@ -1,0 +1,32 @@
+.notes-form{
+  margin-bottom: 20px;
+}
+
+.note-input{
+  padding: 10px;
+  width: 300px;
+  font-size: 18px;
+}
+
+.note-btn{
+  height:45px;
+  vertical-align: top;
+  color: #333;
+  width: 150px;
+  font-size: 18px;
+}
+
+.notes-form.small{
+  padding-left:50px;
+  .note-input{
+    padding: 5px;
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .note-btn{
+    height: 31px;
+    font-size: 14px;
+    width:80px;
+  }
+}

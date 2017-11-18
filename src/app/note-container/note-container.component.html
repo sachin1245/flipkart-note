@@ -1,0 +1,7 @@
+<ng-container *ngIf="notes">
+  <div *ngFor="let note of notes; let i = index">
+    <note [note]="note" [index]="i"></note>
+  </div>
+</ng-container>
+
+

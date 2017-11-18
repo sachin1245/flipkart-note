@@ -1,0 +1,4 @@
+<form *ngIf="loadTemplate" [ngClass]="{'small': small}" [formGroup]="notesForm" action="" (ngSubmit)="submitNote(notesForm.value)" class="notes-form">
+  <input type="text" formControlName="note" class="note-input" required placeholder="Type to make a note">
+  <button type="submit" class="note-btn">Add Note</button>
+</form>

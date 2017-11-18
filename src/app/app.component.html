@@ -1,0 +1,8 @@
+<div class="container">
+  <notes-form></notes-form>
+
+  <input class="search" #searched (keyup)="search(searched.value)" type="text" placeholder="search">
+  <button>Search</button>
+
+  <note-container></note-container>
+</div>

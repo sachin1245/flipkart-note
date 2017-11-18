@@ -1,0 +1,20 @@
+
+<ng-container >
+  <div class="note">
+    <p class="description">{{note.note}}</p>
+    <div class="btn-container">
+      <button class="delete-btn" (click)="deleteNote(note)">Delete</button>
+      <button class="new-note" (click)="addNote(index)">New note</button>
+    </div>
+  </div>
+</ng-container>
+
+<notes-form *ngIf="addNoteflag" [index]="index" [small]="true"></notes-form>
+
+<ng-container  class="sub-notes" *ngIf="note.notes">
+  <div class="note" *ngFor="let note of note.notes">
+    <p class="description">{{note}}</p>
+  </div>
+</ng-container>
+
+
