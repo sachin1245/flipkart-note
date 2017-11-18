@@ -19,8 +19,6 @@ export class NoteContainerComponent implements OnInit {
 
       this.notesService.updateNote$.subscribe(
         (notes: any) => {
-          console.log('update value');
-          console.log(notes);
           this.notes = notes;
         }
       )

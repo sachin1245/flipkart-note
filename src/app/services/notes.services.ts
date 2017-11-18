@@ -13,7 +13,6 @@ export class NotesService {
   constructor() {
     this.notes =  JSON.parse(localStorage.getItem('notes')) || [];
     this.updateNote.next(this.notes);
-    console.log(this.notes);
   }
 
 
@@ -37,7 +36,6 @@ export class NotesService {
 
   deleteNote(note: any){
     let notePosition = this.notes.indexOf(note);
-    console.log(this.notes.indexOf(note));
     if(notePosition > -1){
       this.notes.splice(notePosition, 1);
     }
@@ -48,7 +46,6 @@ export class NotesService {
   }
 
   search(value){
-    console.log(value);
    let  notes =_.filter(this.notes, function(note: any) {
      return note.note.indexOf(value) > -1;
    });

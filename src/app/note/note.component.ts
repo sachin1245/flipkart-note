@@ -26,7 +26,6 @@ export class NoteComponent implements OnInit, OnChanges {
     }
 
     ngOnChanges() {
-      console.log(this.note);
     }
 
     deleteNote(note: any){

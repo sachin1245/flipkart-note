@@ -33,7 +33,6 @@ export class NotesFormComponent implements OnInit {
   }
 
   submitNote(data: any){
-    console.log(data);
 
     this.notesService.addNote(data.note, this.index);
 
