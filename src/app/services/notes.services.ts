@@ -43,6 +43,8 @@ export class NotesService {
     }
 
     this.updateNote.next(this.notes);
+
+    localStorage.setItem('notes', JSON.stringify(this.notes));
   }
 
   search(value){
