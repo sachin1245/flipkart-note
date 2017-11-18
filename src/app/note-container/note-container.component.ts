@@ -15,11 +15,7 @@ export class NoteContainerComponent implements OnInit {
 
     ngOnInit() {
 
-      // this.notesService.updateNote$.subscribe(
-      //   (notes: any) => {
-      //     console.log('updated');
-      //   }
-      // )
+     this.notes = this.notesService.notes;
 
       this.notesService.updateNote$.subscribe(
         (notes: any) => {

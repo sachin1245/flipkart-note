@@ -11,7 +11,8 @@ export class NotesService {
   noteAdded$ = this.noteAdded.asObservable();
   index: number;
   constructor() {
-    // this.notes =  JSON.parse(localStorage.getItem('notes')) || [];
+    this.notes =  JSON.parse(localStorage.getItem('notes')) || [];
+    this.updateNote.next(this.notes);
     console.log(this.notes);
   }
 
